@@ -1,0 +1,13 @@
+1.Run this docker run --name reconcillation-api-container -p 8081:8081 -e MYSQL_HOST=172.7.0.107 -e MYSQL_PORT=3309  -e MYSQL_USER=mfin   -e MYSQL_PASSWORD=mfin  
+-e MYSQL_DATABASE=mfin_db   -e HTTP_PORT=8081   -e JWT_SECRET=f7719487015043e31195312d8e212bfd7ea795928201524e82cadf0665ad9697   -e JWT_EXPIRATION_MS=120000   -e USER_NAME=admin   -e USER_PASSWORD=secret   -d bd18ec975f19(the image)
+2.docker logs -f reconcillation-api-container
+
+
+//////////to remove//////////
+docker rm -f reconcillation-api-container
+
+////////////grep the port/////
+docker ps -a | grep 8081
+
+
+
